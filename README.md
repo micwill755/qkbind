@@ -1,14 +1,6 @@
 # qkbind
 
-**Lightweight Python bindings for C** - A pybind11-inspired macro system for pure C projects.
-
-## Features
-
-- ✅ **Pure C** - No C++ required
-- ✅ **Macro-based** - Minimal boilerplate
-- ✅ **Header-only** - Just include `qkbind.h`
-- ✅ **Zero dependencies** - Only Python.h
-- ✅ **Easy to use** - Familiar pybind11-style API
+Lightweight Python bindings for C
 
 ## Installation
 
@@ -22,7 +14,7 @@ Or include directly in your project:
 #include <qkbind/qkbind.h>
 ```
 
-## Quick Example
+## Example
 
 ```c
 #include <qkbind/qkbind.h>
@@ -72,19 +64,6 @@ v2 = vector_c.Vector(100)
 v3 = v1 + v2  # Calls C code!
 print(v3.size)
 ```
-
-## Comparison
-
-| Feature | qkbind | pybind11 | Python C API | ctypes |
-|---------|--------|----------|--------------|--------|
-| Language | C | C++ | C | Python |
-| Lines of code | ~50 | ~20 | ~200 | ~80 |
-| Dependencies | None | C++11 | None | None |
-| Performance | Fast | Fast | Fast | Medium |
-
-## Documentation
-
-See [examples/](examples/) for more usage patterns.
 
 ## License
 
